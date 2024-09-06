@@ -1,0 +1,85 @@
+.clients {
+    align-content: center;
+    column-gap: 40px;
+    display: grid;
+    grid-template-areas: "text text text" "emily thomas jennie";
+    height: 776px;
+    justify-content: space-between;
+    padding: 160px;
+    row-gap: 80px;
+    width: 100%;
+}
+
+.text {
+    color: hsl(210, 4%, 67%);
+    font-size: 1.6em;
+    grid-area: text;
+    justify-self: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.emily {
+    grid-area: emily;
+}
+
+.thomas {
+    grid-area: thomas;
+}
+
+.jennie {
+    grid-area: jennie;
+}
+
+.client {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.client img {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+.client .bio {
+    color: hsl(212, 27%, 19%);
+    font-family: Barlow;
+    line-height: 28px;
+    margin-top: 65px;
+    width: 100%;
+}
+
+.client .name {
+    color: hsl(0, 0%, 0%);
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin-top: 70px;
+}
+
+.client .role {
+    color: hsla(232, 10%, 55%, 0.8);
+    font-family: Barlow;
+    font-size: 0.8em;
+    margin-top: 14px;
+}
+
+@media (max-width: 1000px) {
+    .clients {
+        column-gap: 0;
+        grid-template-areas: "text" "emily" "thomas" "jennie";
+        height: 1250px;
+        padding: 60px;
+        row-gap: 40px;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .client {
+        width: 100%;
+    }
+}
